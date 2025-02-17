@@ -3,12 +3,31 @@
     background-color: #333;
     font-size: 16;
     width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
 }
-
 
 .topnav{
     background-color: #333;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    border-radius: 15px;
+    background-color: #0d6efd;
+    padding: 15px;
+}
+
+.btn a{
+    color: white;
 }
 
 .topnav a{
@@ -16,7 +35,6 @@
     color: white;
     text-align: center;
     padding: 16px 10px;
-    text-decoration: none;
     font-size: 16px;
 }
 
@@ -25,19 +43,53 @@
     background-color: #3E3636;
 }
 
-.p0{
+.p-0{
     padding: 0;
 }
 
+.left{
+    width: 200px;
+    float: left;
+    display: flex;
+}
+
 .right {
+    position: absolute;
+    right: 0%;
     float: right;
-  }
+}
 
 .container{
     width: 80%;
     margin: 0 auto;
 }
 
+.bb{
+    padding: 10px;
+    display: flex;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+}
+
 body{
     margin: 0;
+}
+
+.contact{
+    display: block;
+    padding: 10px;
+    max-width: 400px;
+    margin: 10px;
+    color: white;
+    
+}
+
+.contact li{
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.contact li a{
+    color: white;
 }
