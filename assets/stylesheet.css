@@ -24,12 +24,18 @@ a{
 .btn{
     border-radius: 10px;
     background-color: #0d6efd;
-    padding: 15px;
+    padding: 5px 15px;
     margin: 0px 5px;
 }
 
-.btn a{
+a.btn{
     color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a.btn:hover{
+    background-color: #d3d3dd;
+    color: #333;
 }
 
 .topnav a{
@@ -77,6 +83,14 @@ body{
     margin: 0;
 }
 
+h5{
+    margin: 10px 0px;
+}
+
+ul{
+    padding-left: 20px;
+}
+
 .contact{
     display: block;
     padding: 10px;
@@ -105,9 +119,8 @@ body{
 }
 
 .card-element{
-    /* display: block; */
-    min-width: 300px;
-    height: 400px;
+    width: 300px;
+    max-height: 400px;
     background-color: white;
     border-color: black;
     padding: 5px;
